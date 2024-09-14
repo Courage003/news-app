@@ -1,0 +1,30 @@
+/* Base style for footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Footer content container */
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Footer is visible (default) */
+  .footer.visible {
+    transform: translateY(0); /* Shows the footer */
+  }
+  
+  /* Footer is hidden when scrolling up */
+  .footer.hidden {
+    transform: translateY(100%); /* Hides the footer off-screen */
+  }
+  
