@@ -21,7 +21,7 @@ const News = (props) => {
 
     const updateNews = async () => {
         props.setProgress(10)
-        let url = `https://newsapi.org/v2/top-headlines?in=${props.country}&category=${props.category}&apiKey=a3051a21-7317-49fd-800f-69791bb1a047&page=${page}&pageSize=${props.pageSize}`
+        let url = `https://newsapi.org/v2/top-headlines?in=${props.country}&category=${props.category}&apiKey=a5b42d148b934c609f259034b800e11f&page=${page}&pageSize=${props.pageSize}`
         setPage(page + 1)
         setLoading(true)
         let data = await fetch(url)
@@ -43,7 +43,7 @@ const News = (props) => {
 
 //Guardian API key usage new
     const fetchMoreData = async () => {
-        let url = `https://newsapi.org/v2/top-headlines?in=${props.country}&category=${props.category}&apiKey=a3051a21-7317-49fd-800f-69791bb1a047&page=${page + 1}&pageSize=${props.pageSize}`
+        let url = `https://newsapi.org/v2/top-headlines?in=${props.country}&category=${props.category}&apiKey=a5b42d148b934c609f259034b800e11f&page=${page + 1}&pageSize=${props.pageSize}`
         setPage(page + 1)
         let data = await fetch(url)
         let parsedData = await data.json()
