@@ -1,0 +1,28 @@
+{
+    "rewrites": [
+      {
+        "source": "/api/news/(.*)",
+        "destination": "https://newsapi.org/v2/top-headlines?apiKey=a5b42d148b934c609f259034b800e11f&$1"
+      }
+    ],
+    "headers": [
+      {
+        "source": "/api/(.*)",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          },
+          {
+            "key": "Access-Control-Allow-Methods",
+            "value": "GET, POST, PUT, DELETE, OPTIONS"
+          },
+          {
+            "key": "Access-Control-Allow-Headers",
+            "value": "Content-Type, Authorization"
+          }
+        ]
+      }
+    ]
+  }
+  
