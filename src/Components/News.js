@@ -41,7 +41,7 @@ const News = (props) => {
         //eslint-disable-next-line
     }, [])
 
-//Guardian API key usage new
+
     const fetchMoreData = async () => {
         let url = `https://newsapi.org/v2/top-headlines?in=${props.country}&category=${props.category}&apiKey=a5b42d148b934c609f259034b800e11f&page=${page + 1}&pageSize=${props.pageSize}`
         setPage(page + 1)
