@@ -31,6 +31,7 @@ const Navbar = (props) => {
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            /*tailwind code*/
           >
             <span className="navbar-toggler-icon"></span>
           </button>
