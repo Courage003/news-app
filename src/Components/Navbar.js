@@ -114,9 +114,12 @@ const Navbar = (props) => {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
+
+             
               <button
                 className={`btn ${props.mode === 'dark' ? 'btn-outline-light' : 'bg-dark text-white'
                   }`}
+                   /*Dark Mode toggle code taken from tailwind*/
                 type="submit"
               >
                 Search
